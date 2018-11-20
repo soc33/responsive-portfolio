@@ -1,9 +1,11 @@
-body{
+html,body{
     background-color: rgb(205, 255, 238);
     background-image: url("../images/full-bloom.png");
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 header {
     position: fixed;
@@ -12,11 +14,12 @@ header {
     background: #ffffff;
     height: 80px;
     border-bottom: #4aaaa5 solid 3px;
+    left: 0px;
 }
 .-container {
     width: 960px;
-    margin-left: 20%;
-    margin-right:25%;
+    margin-left: 10%;
+    margin-right:20%;
     overflow: auto;
 }
 h1 {
@@ -39,7 +42,7 @@ h4 {
     display: inline-block;
     width: 960px;
     top: 0;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 25%;
     margin-top: 100px;
     background: #ffffff;
@@ -55,10 +58,7 @@ h4 {
     text-align: center;
     position: fixed;
     font-size: 45px;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 16px;
-
+    padding: 15px 10px 16px 0px;    
 }
 .pages {
     margin-top: 40px;
@@ -152,4 +152,61 @@ h3 {
 .pic {
     margin: 0;
 }
+@media screen and (max-width: 980px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper {
+        margin-left: 5px;
+    }
+    .-container {
+        width: 90%;
+        margin-left: 5px;
+    }
+    nav {
+        margin-right: 5px;
+    }
+    .info {
+        margin-left: 5px;
+        width: 55%;
+    }
+    .name {
+        left: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info {
+        margin-left: 5px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 640px) {
+    header {
+        height: 180px;
+        border: solid 1px lightgray;
+    }
+    .-container {
+        height: 180px;
+        margin: auto;
+    }
+    nav {
+        top: 150px;
+    }
+    .info {
+        width: 90%;
+        margin-top: 180px;
+    }
+    img {
+        width: 90%;
+        height: auto;
+    }
+    .name {
+        width: 100%;
 
+    }
+    .pages {
+        margin-top: 120px;
+        text-align: center;
+    }
+}
