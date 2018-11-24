@@ -18,8 +18,8 @@ header {
 }
 .-container {
     width: 960px;
-    margin-left: 10%;
-    margin-right:20%;
+    margin-left: auto;
+    margin-right:auto;
     overflow: auto;
 }
 h1 {
@@ -39,11 +39,11 @@ h4 {
     font-weight: normal;
 }
 .info {
-    display: inline-block;
-    width: 960px;
+    /* display: inline-block; */
+    width: 918px;
     top: 0;
-    margin-left: 10%;
-    margin-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
     background: #ffffff;
     padding: 20px;
