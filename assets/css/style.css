@@ -15,6 +15,7 @@ header {
     height: 80px;
     border-bottom: #4aaaa5 solid 3px;
     left: 0px;
+    z-index: 3;
 }
 .-container {
     width: 960px;
@@ -128,8 +129,8 @@ footer {
     background: transparent;
     height: 200px;
     width: 200px;
-    float: left;
     margin: 25px;
+    display: inline-block;
 }
 h3 {
     text-align: center;
@@ -187,8 +188,9 @@ h3 {
         border: solid 1px lightgray;
     }
     .-container {
-        height: 180px;
-        margin: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     nav {
         top: 150px;
@@ -197,7 +199,7 @@ h3 {
         width: 90%;
         margin-top: 180px;
     }
-    img {
+    .profilepic {
         width: 90%;
         height: auto;
     }
